@@ -38,7 +38,7 @@
   font-size: 6.5rem;
   margin-bottom: 2rem;
   font-family: "Caveat";
-  -webkit-text-stroke: 1px var(--primary-color);
+  -webkit-text-stroke: 1px #fff;
   text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
   animation: opacity 2.5s linear infinite;
 }
