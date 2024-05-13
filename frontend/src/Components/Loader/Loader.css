@@ -23,3 +23,9 @@
     transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .loader-container {
+    left: 0%;
+  }
+}
