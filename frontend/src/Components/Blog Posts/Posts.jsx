@@ -25,7 +25,7 @@ export default function Posts() {
   useEffect(() => {
     // Fetch posts from the backend API
     axios
-      .get("http://localhost:8000")
+      .get("https://blogify-app-m3p1.onrender.com")
       .then((response) => {
         // Set the posts with initial like status from the server
         setPosts(response.data);
@@ -42,7 +42,7 @@ export default function Posts() {
 
   const handleLike = async (postId) => {
     try {
-      await axios.post(`http://localhost:8000/posts/${postId}/like`);
+      await axios.post(`https://blogify-app-m3p1.onrender.com/posts/${postId}/like`);
       // Update the like status locally
       setPosts((prevPosts) =>
         prevPosts.map((post) =>
@@ -80,7 +80,7 @@ export default function Posts() {
   const handleSavePost = async (postId) => {
     try {
       // Send a POST request to the backend API to save the post
-      await axios.post(`http://localhost:8000/posts/${postId}/save`);
+      await axios.post(`https://blogify-app-m3p1.onrender.com/posts/${postId}/save`);
       // Update the saved status locally
       setPosts((prevPosts) =>
         prevPosts.map((post) =>
@@ -96,7 +96,7 @@ export default function Posts() {
   const handleAddComment = async (postId) => {
     try {
       // Add the comment to the server
-      await axios.post(`http://localhost:8000/posts/${postId}/comments`, {
+      await axios.post(`https://blogify-app-m3p1.onrender.com/posts/${postId}/comments`, {
         comment: inputValue,
       });
       toast.success("Comment added successfully!");
@@ -131,7 +131,7 @@ export default function Posts() {
   const confirmDeletePost = async () => {
     try {
       // Send a delete request to the backend API
-      await axios.delete(`http://localhost:8000/delete/${deletePostId}`);
+      await axios.delete(`https://blogify-app-m3p1.onrender.com/delete/${deletePostId}`);
       // Remove the deleted post from the state
       setPosts((prevPosts) =>
         prevPosts.filter((post) => post.id !== deletePostId)
@@ -159,7 +159,7 @@ export default function Posts() {
             <div className="post__container" key={post.id}>
               <div className="img__container">
                 <img
-                  src={`http://localhost:8000/uploads/${post.image}`}
+                  src={`https://blogify-app-m3p1.onrender.com/uploads/${post.image}`}
                   alt="post"
                 />
               </div>
