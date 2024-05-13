@@ -15,7 +15,7 @@ export default function AddStoryForm() {
       const formData = new FormData();
       formData.append("image", image);
 
-      await axios.post("http://localhost:8000/stories", formData, {
+      await axios.post("https://blogify-app-m3p1.onrender.com/stories", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
