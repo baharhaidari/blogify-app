@@ -1,0 +1,83 @@
+.add__story__section {
+  position: relative;
+  left: 20%;
+  padding: 2rem 4%;
+  height: 100vh;
+  background: var(--primary-color);
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+.add__story__title {
+  font-size: 2.5rem;
+}
+
+.add__story__form {
+  margin: 2rem 0;
+}
+
+.story__buttons {
+  margin-top: 2rem;
+}
+
+.cancel__story__btn,
+.sumbit__story__btn {
+  font-size: 1.3rem;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  padding: 0.7rem 2.4rem;
+  border-radius: 10px;
+  margin: 0 1rem 0 0;
+  border: 1px solid var(--text-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.cancel__story__btn:hover,
+.sumbit__story__btn:hover {
+  background: var(--primary-color);
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+}
+
+.placeholder__image,
+.selected__image {
+  min-width: 10rem;
+  max-width: 25rem;
+  border-radius: 10px;
+}
+
+.select__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.select__image__btn {
+  font-size: 1.3rem;
+  background: var(--primary-color);
+  color: var(--text-color);
+  padding: 0.7rem 2.4rem;
+  border-radius: 10px;
+  border: 1px solid var(--text-color);
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 0.8rem;
+}
+
+.select__image__btn:hover {
+  background: var(--text-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.cancel__story__btn:hover,
+.sumbit__story__btn:hover,
+.select__image__btn:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .add__story__section {
+    left: 0%;
+    width: 100%;
+    padding: 4%;
+  }
+}

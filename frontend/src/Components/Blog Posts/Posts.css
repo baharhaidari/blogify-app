@@ -1,0 +1,229 @@
+.posts {
+  position: relative;
+  left: 18%;
+  padding: 2.5% 5% 2.5% 9%;
+  background: var(--primary-color);
+  color: var(--text-color);
+  min-height: 105vh;
+  width: 80%;
+}
+
+.posts__section__title {
+  font-size: 2.2rem;
+  letter-spacing: 0.4px;
+  color: var(--black-color);
+}
+
+.posts__wrapper {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.post__container {
+  padding: 1rem;
+  background: var(--post-bg-color);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  min-width: 46%;
+  max-width: 46%;
+  -webkit-box-shadow: 1px 10px 23px -13px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: 1px 10px 23px -13px rgba(0, 0, 0, 0.49);
+  box-shadow: 1px 10px 23px -13px rgba(0, 0, 0, 0.49);
+  transition: all 0.5s ease;
+}
+
+.post__container:hover {
+  -webkit-box-shadow: 1px 10px 23px -2px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: 1px 10px 23px -2px rgba(0, 0, 0, 0.49);
+  box-shadow: 1px 10px 23px -2px rgba(0, 0, 0, 0.49);
+}
+
+.post__container .img__container img {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 20rem;
+  height: 26rem;
+  border-radius: 10px;
+}
+
+.icons__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.like__save__comment {
+  font-size: 1.5rem;
+  margin: 0.3rem 0;
+}
+
+.like__save__comment i {
+  padding: 0.2rem 1rem 0.2rem 0rem;
+}
+
+.edit__delete__menu i {
+  padding: 0 0 0 1rem;
+}
+
+.edit__delete__menu i:hover,
+.like__save__comment i:hover {
+  cursor: pointer;
+}
+
+.post__data .post__title {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+  line-height: 1.5;
+  font-weight: 700;
+  font-family: "Merienda", cursive;
+}
+
+.post__data .post__desc {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.post__date {
+  font-weight: 500;
+  color: rgb(110, 110, 133);
+}
+
+.edit__delete__menu {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 23px;
+  right: 0;
+  background-color: #fdfdfd;
+  border: 2px solid #efedf5;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  min-width: 10.5rem;
+  max-width: 15rem;
+  -webkit-box-shadow: 0px 10px 15px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 15px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 8px 11px -8px rgba(0, 0, 0, 0.75);
+}
+
+.dropdown button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 0.97rem;
+  text-align: left;
+}
+
+.dropdown button i {
+  margin-right: 0.5rem;
+  padding-left: 0;
+}
+
+.fa-ellipsis-vertical {
+  font-size: 1.7rem;
+}
+
+.more__link,
+.less__link {
+  font-size: 1.1rem;
+  color: blue;
+}
+
+.more__link:hover,
+.less__link:hover {
+  cursor: pointer;
+}
+
+.less__link {
+  display: block;
+  margin-top: 0.3rem;
+}
+
+.like__filled {
+  color: red;
+}
+
+hr {
+  margin-top: 1.5rem;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.comments__txtarea__wrapper {
+  display: flex;
+  position: relative;
+  margin-top: 0.8rem;
+}
+
+.comments__txtarea__wrapper textarea {
+  resize: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  padding: 0.4rem;
+  background: transparent;
+  color: var(--text-color);
+  width: 100%;
+  margin-bottom: 0.1rem;
+  border-radius: 10px;
+}
+
+.submit__comment__btn {
+  border: none;
+  background: var(--black-color);
+  position: absolute;
+  /* align-self: flex-end; */
+  left: 91%;
+  top: 7.5px;
+}
+
+.submit__comment__btn i {
+  border: 1px solid blue;
+  border-radius: 100%;
+  background: blue;
+  color: var(--primary-color);
+  padding: 0.6rem;
+}
+
+.submit__comment__btn:hover {
+  cursor: pointer;
+  color: rgb(109, 37, 176) !important;
+}
+
+.comments__container {
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+
+.comment {
+  background: var(--comments-bg-color);
+  padding: 0.4rem 0.6rem;
+  border-radius: 10px;
+  width: 85%;
+  margin: 0.4rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .posts {
+    min-width: 100%;
+    left: 0%;
+    padding: 1rem 10% 1rem 10%;
+  }
+
+  .posts__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+  }
+
+  .post__container {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}

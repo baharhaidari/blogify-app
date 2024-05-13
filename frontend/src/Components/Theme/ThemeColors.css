@@ -1,0 +1,32 @@
+.dark-theme {
+  --primary-color: #131313;
+  --text-color: rgb(233, 233, 242);
+  --gray-color: #d1cbd5;
+  --navbar-border-color: #fff;
+  --btn-color: #fff;
+  --home-bg-color: #000000;
+  --home--desc-color: rgb(166, 169, 181);
+  --post-bg-color: #202122;
+  --comments-bg-color: #131313;
+  --home--title-color: rgb(255, 255, 255);
+  --coming-soon-text-color: rgb(0, 0, 0);
+  --button-bg-color: #fff;
+  --button-text-color: #000;
+  --button-border-color: ;
+}
+
+.light-theme {
+  --primary-color: rgb(255, 255, 255);
+  --text-color: rgb(0, 0, 0);
+  --gray-color: #bab4bd;
+  --navbar-border-color: rgb(0, 0, 0);
+  --btn-color: #fff;
+  --home-bg-color: #000000dc;
+  --home--desc-color: rgb(166, 169, 181);
+  --post-bg-color: transparent;
+  --comments-bg-color: rgb(239, 236, 242);
+  --home--title-color: rgb(255, 255, 255);
+  --coming-soon-text-color: rgb(0, 0, 0);
+  --button-bg-color: rgb(0, 0, 0);
+  --button-text-color: #fff;
+}

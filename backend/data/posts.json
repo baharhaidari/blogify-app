@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1714984034944,
+    "title": "First Post",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo hic, non sint explicabo corrupti in harum incidunt dolore ab excepturi quibusdam voluptatum deleniti quis quam repellat doloremque quod omnis sit.",
+    "createdAt": 2024,
+    "image": "1714984034936-880879259.jpg",
+    "comments": [
+      "test"
+    ],
+    "like": false,
+    "saved": false
+  },
+  {
+    "id": 1715009965166,
+    "title": "Second Post",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo hic, non sint explicabo corrupti in harum incidunt dolore ab excepturi quibusdam voluptatum deleniti quis quam repellat doloremque quod omnis sit.",
+    "createdAt": 2024,
+    "image": "1715009965160-884740138.jpg",
+    "comments": [],
+    "like": false,
+    "saved": false
+  },
+  {
+    "id": 1715076152055,
+    "title": "Third Post",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis corrupti laboriosam molestias numquam natus soluta atque nihil possimus, dolor quibusdam voluptates eligendi excepturi ipsa mollitia ab repudiandae repellat maxime hic!",
+    "createdAt": 2024,
+    "image": "1715076152047-45847944.jpg",
+    "comments": [
+      "rgfdsvds\n"
+    ],
+    "like": false,
+    "saved": false
+  },
+  {
+    "id": 1715587382446,
+    "title": "Fourth Post",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id voluptas, pariatur minus non ab exercitationem quia doloribus numquam magnam deserunt. Reprehenderit quia quidem aspernatur, laborum eum iusto voluptatem illo autem!",
+    "createdAt": 2024,
+    "image": "1715587382433-388341350.jpg",
+    "comments": [],
+    "like": false
+  },
+  {
+    "id": 1715587422482,
+    "title": "Fifth Post",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id voluptas, pariatur minus non ab exercitationem quia doloribus numquam magnam deserunt. Reprehenderit quia quidem aspernatur, laborum eum iusto voluptatem illo autem!",
+    "createdAt": 2024,
+    "image": "1715587422473-759817233.jpg",
+    "comments": [],
+    "like": false
+  }
+]

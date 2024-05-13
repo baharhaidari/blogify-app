@@ -1,0 +1,36 @@
+.footer {
+  padding: 2rem 0;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+  position: relative;
+  left: 20%;
+}
+
+p {
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
+.footer p {
+  font-size: 1.1rem;
+  color: rgb(110, 110, 133);
+}
+
+.footer p:nth-child(1) span {
+  padding: 0 0.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    left: 0;
+    width: 100%;
+  }
+
+  .footer p {
+    font-size: 1rem;
+  }
+}

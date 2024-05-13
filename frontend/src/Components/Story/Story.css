@@ -1,0 +1,128 @@
+.story__section {
+  position: relative;
+  left: 25%;
+  padding: 8rem 0;
+  min-height: 13vh;
+  max-height: 25vh;
+  display: flex;
+  align-items: center;
+  width: 70%;
+  gap: 2rem;
+}
+
+.add__story__link {
+  all: unset;
+  background: linear-gradient(to bottom right, #f371ab, #cf98ec, #7ca8ea);
+  border-radius: 100%;
+  min-width: 6.4rem;
+  min-height: 6.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: var(--primary-color);
+  font-family: "Dancing Script", cursive;
+  font-size: 1.4rem;
+  font-weight: 1000;
+  border: 2px solid var(--text-color);
+}
+
+.add__story__link:hover {
+  cursor: pointer;
+}
+
+.add__story__icon {
+  position: absolute;
+  top: 71%;
+  left: 65%;
+  font-size: 1.8rem;
+  color: var(--text-color);
+}
+
+.story__list {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: gary var(--text-color);
+}
+
+.story__list::-webkit-scrollbar-track {
+  background: var(--primary-color);
+}
+
+.story__list::-webkit-scrollbar-thumb {
+  background-color: var(--text-color);
+  border-radius: 10px;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.story:hover {
+  cursor: pointer;
+}
+
+.story__image {
+  width: 5.3rem;
+  height: 5.3rem;
+  border-radius: 100%;
+  padding: 0.2rem;
+  border: 2.5px solid transparent;
+  animation: rainbow-border 7s infinite ease-in-out;
+  object-fit: cover;
+}
+
+@keyframes rainbow-border {
+  0% {
+    border-color: red;
+  }
+  16.67% {
+    border-color: orange;
+  }
+  33.33% {
+    border-color: yellow;
+  }
+  50% {
+    border-color: green;
+  }
+  66.67% {
+    border-color: blue;
+  }
+  83.33% {
+    border-color: indigo;
+  }
+  100% {
+    border-color: violet;
+  }
+}
+
+.story span {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin-top: 0.4rem;
+}
+
+.moda__image__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__image {
+  max-width: 30rem;
+  max-height: 35rem;
+}
+
+@media screen and (max-width: 768px) {
+  .story__section {
+    left: 4%;
+    width: 85%;
+  }
+}
