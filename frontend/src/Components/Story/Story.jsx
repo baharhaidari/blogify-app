@@ -11,7 +11,7 @@ export default function StoryUploader() {
   useEffect(() => {
     // Fetch stories from backend
     axios
-      .get("http://localhost:8000/stories")
+      .get("https://blogify-app-m3p1.onrender.com/stories")
       .then((response) => {
         setStories(response.data);
       })
@@ -47,7 +47,7 @@ export default function StoryUploader() {
             onClick={() => openModal(story)}
           >
             <img
-              src={`http://localhost:8000/uploads/${story.imageUrl}`}
+              src={`https://blogify-app-m3p1.onrender.com/uploads/${story.imageUrl}`}
               alt=""
               className="story__image"
             />
@@ -61,7 +61,7 @@ export default function StoryUploader() {
         <Modal closeModal={closeModal}>
           <div className="moda__image__wrapper">
             <img
-              src={`http://localhost:8000/uploads/${selectedStory.imageUrl}`}
+              src={`https://blogify-app-m3p1.onrender.com/uploads/${selectedStory.imageUrl}`}
               alt=""
               className="modal__image"
             />
