@@ -1,5 +1,6 @@
 .create__post__form {
-  margin-left: 20%;
+  position: relative;
+  left: 20%;
   max-width: 80%;
   padding: 2% 4%;
   color: var(--text-color);
@@ -102,4 +103,14 @@
   display: flex;
   gap: 0.8rem;
   float: right;
+}
+
+@media screen and (max-width: 768px) {
+  .create__post__form {
+    left: 0%;
+  }
+
+  .form {
+    max-width: 100%;
+  }
 }
