@@ -13,7 +13,7 @@ export default function SavedPosts() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/saved-posts")
+      .get("https://blogify-app-m3p1.onrender.com/saved-posts")
       .then((response) => {
         setSavedPosts(response.data);
       })
@@ -24,7 +24,7 @@ export default function SavedPosts() {
 
   const handleLike = async (postId) => {
     try {
-      await axios.post(`http://localhost:8000/posts/${postId}/like`);
+      await axios.post(`https://blogify-app-m3p1.onrender.com/posts/${postId}/like`);
       setSavedPosts((prevPosts) =>
         prevPosts.map((post) =>
           post.id === postId ? { ...post, like: !post.like } : post
@@ -57,7 +57,7 @@ export default function SavedPosts() {
   const handleSavePost = (postId) => {
     // Send a POST request to the backend API to save or unsave the post
     axios
-      .post(`http://localhost:8000/posts/${postId}/save`)
+      .post(`https://blogify-app-m3p1.onrender.com/posts/${postId}/save`)
       .then((response) => {
         // Handle successful save or unsave
         const updatedSavedPosts = savedPosts.filter(
@@ -73,7 +73,7 @@ export default function SavedPosts() {
 
   const handleDeletePost = (postId) => {
     axios
-      .delete(`http://localhost:8000/delete/${postId}`)
+      .delete(`https://blogify-app-m3p1.onrender.com/delete/${postId}`)
       .then(() => {
         setSavedPosts((prevPosts) =>
           prevPosts.filter((post) => post.id !== postId)
@@ -88,7 +88,7 @@ export default function SavedPosts() {
 
   const handleAddComment = async (postId) => {
     try {
-      await axios.post(`http://localhost:8000/posts/${postId}/comments`, {
+      await axios.post(`https://blogify-app-m3p1.onrender.com/posts/${postId}/comments`, {
         comment: inputValue,
       });
       toast.success("Comment added successfully!");
@@ -117,7 +117,7 @@ export default function SavedPosts() {
             <div className="post__container" key={post.id}>
               <div className="img__container">
                 <img
-                  src={`http://localhost:8000/uploads/${post.image}`}
+                  src={`https://blogify-app-m3p1.onrender.com/uploads/${post.image}`}
                   alt="post"
                 />
               </div>
