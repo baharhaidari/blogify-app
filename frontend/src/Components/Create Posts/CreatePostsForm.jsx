@@ -23,7 +23,7 @@ export default function CreatePostForm() {
     if (postId) {
       // Fetch the post data using the post ID
       axios
-        .get(`http://localhost:8000/posts/${postId}`)
+        .get(`https://blogify-app-m3p1.onrender.com/posts/${postId}`)
         .then((response) => {
           const { title, description, image } = response.data;
           setTitle(title);
@@ -69,7 +69,7 @@ export default function CreatePostForm() {
       }
 
       if (formMode === "edit") {
-        await axios.put(`http://localhost:8000/posts/${postId}`, formData, {
+        await axios.put(`https://blogify-app-m3p1.onrender.com/posts/${postId}`, formData, {
           headers: {
             "Content-Type": "multipart/form-data",
           },
@@ -88,7 +88,7 @@ export default function CreatePostForm() {
         });
       } else if (formMode === "create") {
         const response = await axios.post(
-          "http://localhost:8000/posts",
+          "https://blogify-app-m3p1.onrender.com/posts",
           formData,
           {
             headers: {
@@ -176,7 +176,7 @@ export default function CreatePostForm() {
               src={
                 uploadedImage
                   ? uploadedImage
-                  : `http://localhost:8000/uploads/${imageUrl}`
+                  : `https://blogify-app-m3p1.onrender.com/uploads/${imageUrl}`
               }
               alt="Selected"
               className="selected__image"
